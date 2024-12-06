@@ -1,0 +1,39 @@
+.sidebar {
+  width: 60px;
+  background-color: #1a1a1a;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 0;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+}
+
+.menu-item {
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item svg {
+  color: #888;
+}
+
+.menu-item span {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.menu-item:hover {
+  background-color: #333;
+}
+
+.menu-item:hover svg,
+.menu-item:hover span {
+  color: #fff;
+}

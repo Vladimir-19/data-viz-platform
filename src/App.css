@@ -1,0 +1,37 @@
+/* App Container */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Main Content Area */
+.main-content {
+  margin-left: 60px; /* Account for Sidebar width */
+  width: calc(100% - 60px); /* Full width minus Sidebar */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent any overflow */
+}
+
+/* Top Navigation */
+.main-content > .navbar {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 60px); /* Account for Sidebar width */
+  height: 60px;
+  background-color: #1a1a1a;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #333;
+}
+
+/* Page Content (below TopNav) */
+.page-content {
+  margin-top: 60px;
+  padding: 20px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
