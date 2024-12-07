@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-To start do
+How to start:
 
 1. `npm i`
 2. `npm run dev`
