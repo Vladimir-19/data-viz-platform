@@ -35,3 +35,13 @@
   height: calc(100vh - 60px);
   overflow-y: auto;
 }
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-left .icon {
+  color: #fff;
+}
