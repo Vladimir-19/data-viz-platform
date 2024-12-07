@@ -9,7 +9,7 @@ FYI: no auth integrated
 
 ## Features Implemented
 - Modern Frontend Framework: Leveraging React 18 as the primary UI library for building robust, interactive user interfaces.
-- Charting and Data Visualization: Integrating ApexCharts and Chart.js via react-apexcharts and react-chartjs-2 to render rich, interactive charts and graphs.
+- Charting and Data Visualization: Integrating ApexCharts via react-apexcharts to render graph.
 - UI Components and Icons:
   - @radix-ui components (e.g., Dialog, Accordion, Tooltip).
   - Lucide-react and @heroicons/react for SVG icons that match various designs.
