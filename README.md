@@ -13,7 +13,7 @@ FYI: no auth integrated
 - UI Components and Icons:
   - @radix-ui components (e.g., Dialog, Accordion, Tooltip).
   - Lucide-react and @heroicons/react for SVG icons that match various designs.
-  - 
+  - shadcn ui
 - Styling System:
   - Tailwind CSS (with PostCSS and autoprefixer).
   - @material-tailwind/react and @material-tailwind/html to combine Tailwind styling conventions with pre-built interactive components.
@@ -24,14 +24,21 @@ FYI: no auth integrated
 ## Mpre about Features:
 
 ### Home page:
-
-
+- Side bar
+- Nav bar
+- Edit button
+- Reusable buttons with shadcn ui
+- Graph - I selected a line graph, thinking that it’s more aligned with the overall style compared to what the CSS template had
+- Tolltip for grap
+- Key preformance indicators - added widths so they remain consistent when the page changes.
+  
 ### Technical Decisions and Trade-offs:
+Having only 5 hours, I had very little time to find perfectly matching icons, so the icons you see are as close as possible. I also didn’t have the chance to create an identical search bar. I tried to reuse as many CSS containers and components as possible, but I prioritized speed over reusability.
 
 ### Known Limitations:
-- Hardcoded Variables and Categories
-- No Validation or Accessibility Enhancements:
-- No External State Management
+- Hardcoded variables and categories
+- No validation or accessibility enhancements:
+- No external state management
 - Not adaptable for mobile devices 
 
 ![Alt text](./public/home.jpg)
@@ -47,12 +54,12 @@ FYI: no auth integrated
 - Styling with CSS: Used a combination of static CSS classes and inline styles for quick adjustments. Classes define the overall look and feel, while inline styles handle small layout tweaks.
 
 ### Known Limitations:
-- Hardcoded Variables and Categories
-- No Validation or Accessibility Enhancements:
-- No External State Management
+- Hardcoded variables and categories
+- No validation or accessibility enhancements:
+- No external state management
 - Not adaptable for mobile devices 
 
 
 ![Alt text](./public/edit.jpg)
 
-## Time Spent: ~6 hours 
+## Time Spent: ~5 hours 
