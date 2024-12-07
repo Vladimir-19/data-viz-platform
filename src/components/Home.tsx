@@ -8,11 +8,6 @@ import EditSidebar from "./EditSidebar";
 
 const Home = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const [isContainerVisible, setContainerVisible] = useState(false);
-
-  const toggleContainer = () => {
-    setContainerVisible(!isContainerVisible);
-  };
 
   return (
     <div className="container">
@@ -71,43 +66,6 @@ const Home = () => {
         </div>
       </div>
       <GraphAndKPISection />
-      <div className="relative w-full h-screen">
-        {/* Button to toggle the right container */}
-        <button
-          className="absolute top-4 left-4 bg-green-500 text-white px-4 py-2 rounded-lg"
-          onClick={toggleContainer}
-        >
-          Toggle Right Container
-        </button>
-
-        {/* Blurred Background and Right Container */}
-        {isContainerVisible && (
-          <div className="fixed inset-0 z-50 flex">
-            {/* Blurred Background */}
-            <div className="flex-1 bg-black bg-opacity-50 backdrop-blur-sm"></div>
-
-            {/* Right Container */}
-            <div className="w-1/3 bg-[#1a1a1a] text-white h-full p-6 overflow-y-auto">
-              <h1 className="text-xl font-semibold mb-4">Right Container</h1>
-              <p>
-                This is the right-side container. It takes 1/3 of the page width
-                and has a dark background.
-              </p>
-              <p>
-                You can add more content here, and the rest of the page will
-                remain blurred while this container is visible.
-              </p>
-              {/* Close Button */}
-              <button
-                className="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg"
-                onClick={toggleContainer}
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        )}
-      </div>
     </div>
   );
 };
