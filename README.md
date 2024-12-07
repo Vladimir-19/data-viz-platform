@@ -8,7 +8,25 @@ How to start:
 FYI: no auth integrated
 
 ## Features Implemented
+- Modern Frontend Framework: Leveraging React 18 as the primary UI library for building robust, interactive user interfaces.
+- Charting and Data Visualization: Integrating ApexCharts and Chart.js via react-apexcharts and react-chartjs-2 to render rich, interactive charts and graphs.
+- UI Components and Icons:
+  - @radix-ui components (e.g., Dialog, Accordion, Tooltip).
+  - Lucide-react and @heroicons/react for SVG icons that match various designs.
+  - 
+- Styling System:
+  - Tailwind CSS (with PostCSS and autoprefixer).
+  - @material-tailwind/react and @material-tailwind/html to combine Tailwind styling conventions with pre-built interactive components.
+- Home page
+- Graph tool tip
+- Edit siade bar with dynamic buttons, loading 1.5 second
+
+## Mpre about Features:
+
 ### Home page:
+
+
+### Technical Decisions and Trade-offs:
 
 ### Known Limitations:
 - Hardcoded Variables and Categories
@@ -36,3 +54,5 @@ FYI: no auth integrated
 
 
 ![Alt text](./public/edit.jpg)
+
+## Time Spent: ~6 hours 
