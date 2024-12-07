@@ -14,6 +14,7 @@ FYI: no auth integrated
   - @radix-ui components (e.g., Dialog, Accordion, Tooltip).
   - Lucide-react and @heroicons/react for SVG icons that match various designs.
   - shadcn ui
+  - Most icons from https://lucide.dev/icons/info.
 - Styling System:
   - Tailwind CSS (with PostCSS and autoprefixer).
   - @material-tailwind/react and @material-tailwind/html to combine Tailwind styling conventions with pre-built interactive components.
