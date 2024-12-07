@@ -4,9 +4,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
+  backdrop-filter: blur(3px); /* Adjust the blur radius */
   background: rgba(0, 0, 0, 0.3); /* Slight tint to make blur more noticeable */
-  z-index: 1099;
+  z-index: 1200;
 }
 
 .editbar {

@@ -1,15 +1,25 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
   width: 60px;
   background-color: #1a1a1a;
   color: #fff;
   height: 100vh;
   position: fixed;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 16px 0;
   top: 0;
   left: 0;
   z-index: 1100;
+}
+
+.bottom-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10%;
 }
 
 .menu-item {
