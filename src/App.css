@@ -1,23 +1,20 @@
-/* App Container */
 .app-container {
   display: flex;
   height: 100vh;
 }
 
-/* Main Content Area */
 .main-content {
-  margin-left: 60px; /* Account for Sidebar width */
-  width: calc(100% - 60px); /* Full width minus Sidebar */
+  margin-left: 60px;
+  width: calc(100% - 60px);
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Prevent any overflow */
+  overflow: hidden;
 }
 
-/* Top Navigation */
 .main-content > .navbar {
   position: fixed;
   top: 0;
-  width: calc(100% - 60px); /* Account for Sidebar width */
+  width: calc(100% - 60px);
   height: 60px;
   background-color: #1a1a1a;
   z-index: 1000;
@@ -28,7 +25,6 @@
   border-bottom: 1px solid #333;
 }
 
-/* Page Content (below TopNav) */
 .page-content {
   margin-top: 60px;
   padding: 20px;

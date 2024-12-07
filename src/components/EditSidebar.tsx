@@ -283,7 +283,7 @@ const EditSidebar: React.FC<EditSidebarProps> = ({ isOpen, onClose }) => {
           Promary Variables
         </h3>
         <div className="header-right">
-          <ChevronUp className="chevron-up" size={20} />{" "}
+          <ChevronUp className="chevron-up" size={20} />
         </div>
       </div>
       <div className="dropdown-header-container">
@@ -291,7 +291,7 @@ const EditSidebar: React.FC<EditSidebarProps> = ({ isOpen, onClose }) => {
           Secondary Variables
         </h3>
         <div className="header-right">
-          <ChevronUp className="chevron-up" size={20} />{" "}
+          <ChevronUp className="chevron-up" size={20} />
         </div>
       </div>
     </div>

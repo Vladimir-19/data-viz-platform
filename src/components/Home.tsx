@@ -44,7 +44,7 @@ const Home = () => {
       <div className="child-container">
         <div className="header-left">
           <Sparkles className="stars" size={18} />
-          <h2 style={{ color: "#a3e635" }}>Best Scenario Results</h2>{" "}
+          <h2 style={{ color: "#a3e635" }}>Best Scenario Results</h2>
         </div>
 
         <div className="header-right">

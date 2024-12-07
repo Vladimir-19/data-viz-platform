@@ -88,10 +88,8 @@
   font-size: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-
-  /* Positioning the button on the right side of the page */
-  top: 20px; /* Adjust the top position as needed */
-  right: 20px; /* Position it 20px from the right edge of the page */
+  top: 20px;
+  right: 20px;
 }
 
 .dropdown-button:hover,
