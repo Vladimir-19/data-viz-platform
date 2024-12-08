@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Zap, RotateCw, Upload } from "lucide-react";
 import "../style/Home.css";
+import "../index.css";
+import "../App.css";
 import { Button } from "@/components/ui/button";
 import { ChevronUp, MoreHorizontal, Sparkles } from "lucide-react";
 import GraphAndKPISection from "./GraphAndKPISection";

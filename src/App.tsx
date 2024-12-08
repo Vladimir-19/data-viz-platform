@@ -1,26 +1,30 @@
-import { useState } from "react";
-import "./App.css";
-import Sidebar from "./components/Sidebar";
-import TopNav from "./components/TopNav";
-import Home from "./components/Home";
-function App() {
-  const [count, setCount] = useState(0);
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import DashboardPage from "./pages/DashboardPage";
+import LoginPage from "./pages/LoginPage";
+import SignUpPage from "./pages/SignUpPage";
+import { useAuth } from "./hooks/useAuth";
+
+const App: React.FC = () => {
+  const { user } = useAuth();
 
   return (
-    <div className="flex h-screen">
-      <Sidebar />
-
-      <div className="flex-1 flex flex-col bg-gray-100">
-        <div className="fixed top-0 left-0 w-full z-50">
-          <TopNav />
-        </div>
-
-        <div className="pt-14 px-6">
-          <Home />
-        </div>
-      </div>
-    </div>
+    <Routes>
+      <Route
+        path="/login"
+        element={!user ? <LoginPage /> : <Navigate to="/" replace />}
+      />
+      <Route path="/signup" element={<SignUpPage />} />
+      <Route
+        path="/"
+        element={user ? <DashboardPage /> : <Navigate to="/login" replace />}
+      />
+    </Routes>
   );
-}
+};
 
 export default App;

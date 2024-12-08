@@ -72,22 +72,25 @@ const EditSidebar: React.FC<EditSidebarProps> = ({ isOpen, onClose }) => {
             style={{ width: "60%", margin: "1px" }}
           />
           <button
-            className={`edit-header-button ${
+            className={`active-button ${
               selectedButton === 1 ? "selected" : ""
             }`}
             onClick={() => handleButtonClick(1)}
           >
-            <Sparkles style={{ paddingRight: "9px" }} size={15} />
+            <Sparkles style={{ marginRight: "9px" }} size={18} />
             Autofill
           </button>
           <button
-            className={`edit-header-button ${
+            className={`active-button ${
               selectedButton === 2 ? "selected" : ""
             }`}
-            // Assuming you intended to toggle button #2 here, not #1
             onClick={() => handleButtonClick(2)}
           >
-            <RotateCw size={18} className="icon" />
+            <RotateCw
+              style={{ marginRight: "9px" }}
+              size={18}
+              className="icon"
+            />
             Return
           </button>
         </div>
