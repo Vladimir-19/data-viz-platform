@@ -2,10 +2,9 @@
 
 How to start:
 
-1. `npm i`
-2. `npm run dev`
-
-FYI: no auth integrated
+1. After downloading the app create .env file in root directory and paist credentila from file that I have set you.
+2. `npm i`
+3. `npm run dev`
 
 ## Features Implemented
 - Modern Frontend Framework: Leveraging React 18 as the primary UI library for building robust, interactive user interfaces.
@@ -18,11 +17,39 @@ FYI: no auth integrated
 - Styling System:
   - Tailwind CSS (with PostCSS and autoprefixer).
   - @material-tailwind/react and @material-tailwind/html to combine Tailwind styling conventions with pre-built interactive components.
+- Authentication with Fierbase
 - Home page
 - Graph tool tip
 - Edit siade bar with dynamic buttons, loading 1.5 second
 
 ## Mpre about Features:
+
+### Authentication: 
+
+- Email and Password Authentication (Sign in/Sig up)
+- Google Authentication
+- Session Management
+- Responsive Error Handling
+- Log out button
+![Alt text](./public/login.jpg)
+
+### Key Files and Structure:
+
+- Environment Variables (.env) - .env file accessed via import.meta.env
+- Firebase Initialization (src/firebase/firebase.ts)
+- Authentication Hooks (src/hooks/useAuth.ts):
+    - Provides reusable authentication logic, including login, signup, Google login, and logout functionalities.
+    - Tracks the current user's state using Firebase's `onAuthStateChanged`.
+- Login Page (src/pages/LoginPage.tsx)
+- Sign-Up Page (src/pages/SignUpPage.tsx)
+- Dashboard Page (src/pages/DashboardPage.tsx) - cccessed after login, displaying the main app content
+
+### Error handling: 
+![Alt text](./public/error.jpg)
+
+### Log out: 
+I added logout button to the side navigation bar, allowing users to easily log out with a single click.
+![Alt text](./public/exit.jpg)
 
 ### Home page:
 - Side bar
