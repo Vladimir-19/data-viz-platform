@@ -1,22 +1,18 @@
-import React from "react";
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Typography,
-} from "@material-tailwind/react";
 import Chart from "react-apexcharts";
 import { Button } from "@/components/ui/button";
 import "../style/GraphAndKPISection.css";
 import { ChevronDown } from "lucide-react";
 
-// Define the chart configuration with proper TypeScript types
-const chartConfig: ApexCharts.ApexOptions & {
+import { ApexOptions } from "apexcharts";
+
+const chartConfig: {
+  options: ApexOptions;
   series: ApexAxisChartSeries;
   height: number;
+  type: "line";
 } = {
-  type: "line",
   height: 240,
+  type: "line",
   series: [
     {
       name: "Rate",
@@ -29,27 +25,17 @@ const chartConfig: ApexCharts.ApexOptions & {
         show: false,
       },
     },
-    title: {
-      text: "",
-    },
-    dataLabels: {
-      enabled: false,
-    },
+    title: { text: "" },
+    dataLabels: { enabled: false },
     colors: ["#b4d47f"],
     stroke: {
       lineCap: "round",
       curve: "smooth",
     },
-    markers: {
-      size: 0,
-    },
+    markers: { size: 0 },
     xaxis: {
-      axisTicks: {
-        show: false,
-      },
-      axisBorder: {
-        show: false,
-      },
+      axisTicks: { show: false },
+      axisBorder: { show: false },
       labels: {
         style: {
           colors: "white",
@@ -108,29 +94,20 @@ const chartConfig: ApexCharts.ApexOptions & {
   },
 };
 
-export default function Example(): JSX.Element {
+export default function CardGraph() {
   return (
-    <Card>
-      <CardHeader
-        floated={false}
-        shadow={false}
-        color="transparent"
-        className="flex flex-col gap-4 rounded-none md:flex-row md:items-center"
-      >
-        <div className="test">
-          <Button className="dropdown-button">
-            Unsatisfied Demand % <ChevronDown size={15} />
-          </Button>
-        </div>
-      </CardHeader>
-      <CardBody className="px-2 pb-0">
-        <Chart
-          options={chartConfig.options}
-          series={chartConfig.series}
-          type={chartConfig.type}
-          height={chartConfig.height}
-        />
-      </CardBody>
-    </Card>
+    <div>
+      <div className="test">
+        <Button className="dropdown-button">
+          Unsatisfied Demand % <ChevronDown size={15} />
+        </Button>
+      </div>
+      <Chart
+        options={chartConfig.options}
+        series={chartConfig.series}
+        type={chartConfig.type}
+        height={chartConfig.height}
+      />
+    </div>
   );
 }
