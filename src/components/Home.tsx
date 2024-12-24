@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Zap, RotateCw, Upload } from "lucide-react";
 import "../style/Home.css";
 import "../index.css";

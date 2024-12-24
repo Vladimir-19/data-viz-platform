@@ -22,7 +22,7 @@ const Sidebar = () => {
     { icon: Settings },
     { icon: LogOut, onClick: true },
   ];
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
 
   const navigate = useNavigate();
 
@@ -42,7 +42,7 @@ const Sidebar = () => {
           <div
             key={idx}
             className="menu-item"
-            onClick={item.onClick ? handleLogout : undefined} // Attach `handleLogout` for LogOut icon
+            onClick={item.onClick ? handleLogout : undefined} // Attached `handleLogout` for LogOut icon
           >
             <item.icon size={24} />
           </div>
