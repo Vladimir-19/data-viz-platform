@@ -1,12 +1,14 @@
 # React + TypeScript + Vite
 
-URL: https://data-viz-platform-3vrihkas8-vladimir-19s-projects.vercel.app/login
+Vercel deploy: https://data-viz-platform-3vrihkas8-vladimir-19s-projects.vercel.app/login
 
-How to start:
+
+How to start localhost:
 
 1. After downloading the app create .env file in root directory and paist credentila from file that I have set you.
 2. `npm i`
 3. `npm run dev`
+
 
 ## Features Implemented
 - Modern Frontend Framework: Leveraging React 18 as the primary UI library for building robust, interactive user interfaces.
@@ -19,7 +21,7 @@ How to start:
 - Styling System:
   - Tailwind CSS (with PostCSS and autoprefixer).
   - @material-tailwind/react and @material-tailwind/html to combine Tailwind styling conventions with pre-built interactive components.
-- Authentication with Fierbase
+- Authentication with [Fierbase](https://console.firebase.google.com/u/0/)
 - Home page
 - Graph tool tip
 - Edit siade bar with dynamic buttons, loading 1.5 second
@@ -38,7 +40,7 @@ How to start:
 ### Key Files and Structure:
 
 - Environment Variables (.env) - .env file accessed via import.meta.env
-- [Fierbase Initialization](https://console.firebase.google.com/u/0/) (src/firebase/firebase.ts)
+- Fierbase Initialization (src/firebase/firebase.ts)
 - Authentication Hooks (src/hooks/useAuth.ts):
     - Provides reusable authentication logic, including login, signup, Google login, and logout functionalities.
     - Tracks the current user's state using Firebase's `onAuthStateChanged`.
@@ -91,5 +93,8 @@ Having only 5 hours, I had very little time to find perfectly matching icons, so
 
 
 ![Alt text](./public/edit.jpg)
+
+## Design
+https://www.figma.com/design/K9CnC8b6RjzCWyhdMAIRg5/AnswersAi-Frontend-Technical-Assessment?node-id=1-5398
 
 ## Time Spent: ~5 hours 
