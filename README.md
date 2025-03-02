@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
 
+URL: https://data-viz-platform-3vrihkas8-vladimir-19s-projects.vercel.app/login
+
 How to start:
 
 1. After downloading the app create .env file in root directory and paist credentila from file that I have set you.
