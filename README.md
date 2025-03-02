@@ -80,6 +80,9 @@ Having only 5 hours, I had very little time to find perfectly matching icons, so
 - Header Buttons (Single Select): Two header buttons ("Autofill" and "Return") can be toggled, ensuring only one is active at a time.
 - Multiple Select Ovals: The oval-shaped variable buttons can be selected or deselected independently, allowing multiple simultaneous selections.
 - Delayed Tooltip on Hover: Hovering over the "Co2 Distribution" oval button for 1.5 seconds triggers description section. Removing the cursor before the delay elapses prevents the tooltip from showing.
+  ![Alt text](./public/edit.jpg)
+- Hovering over the "Co2 Distribution"
+  ![Alt text](./public/loading.jpg)
 
 ### Technical Decisions and Trade-offs:
 - State Management with Hooks: Used React’s useState hook to manage the selected state of both the header buttons and the oval buttons. (Decided on an array-based approach (selectedOvals) for oval selections to allow multiple selections efficiently).
@@ -92,7 +95,7 @@ Having only 5 hours, I had very little time to find perfectly matching icons, so
 - Not adaptable for mobile devices 
 
 
-![Alt text](./public/edit.jpg)
+
 
 ## Design
 https://www.figma.com/design/K9CnC8b6RjzCWyhdMAIRg5/AnswersAi-Frontend-Technical-Assessment?node-id=1-5398
