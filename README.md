@@ -38,7 +38,7 @@ How to start:
 ### Key Files and Structure:
 
 - Environment Variables (.env) - .env file accessed via import.meta.env
-- Firebase Initialization (src/firebase/firebase.ts)
+- [Fierbase Initialization](https://console.firebase.google.com/u/0/) (src/firebase/firebase.ts)
 - Authentication Hooks (src/hooks/useAuth.ts):
     - Provides reusable authentication logic, including login, signup, Google login, and logout functionalities.
     - Tracks the current user's state using Firebase's `onAuthStateChanged`.
